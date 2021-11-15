@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        textarea{
+            background-color: whitesmoke;
+            height: 10vh;
+            width: 80%;
+            display: block;
+            padding: 2rem;
+            margin: 1rem;
+            border-color: blue;
+        }
+        button{
+            margin: 1rem;
+            background-color: crimson;
+            border-color: black;
+            color: white;
+            
+        }
+        #output
+         {
+          border:1px solid black;
+          width: 80%;
+          height: 10vh;
+          padding: 2rem;
+          display: block;
+          margin: 1rem;
+          
+          
+         }  
+        #heading
+        {
+            text-align: center;
+         display: block;
+          color: blueviolet;
+          background-color: yellowgreen;
+          margin: 1rem;
+          padding: 1rem;
+          height: 8vh;
+         }
+        #footer
+        {
+            background-color: yellowgreen;
+            text-align: center;
+        }
+        #about
+        {
+            text-align: center;
+            color: blueviolet;
+        }
+    </style>
+    
+    <title>BirthdayPrime</title>
+</head>
+<body>
+    <h1  id="heading">BirthdayPrime</h1>
+    <textarea
+     id="input"
+    placeholder="Write your birthday in DDMM format ex:'july 16' as 1607"></textarea>
+
+   
+    <button id="btn-translate">CHECK</button>
+    <div style="font-size: larger;">
+        Output will come here 👇
+    </div>
+    <div id="output"></div>
+    <footer id="footer">
+        <h2 id="about">ABOUT</h2>
+        <div style="font-size: large;">An website to check whether given birthday of user is prime or not</div>
+    </footer>
+    <script src="api.js"type="text/javascript"></script>
+</body>
+</html>
