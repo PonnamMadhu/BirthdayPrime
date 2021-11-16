@@ -1,11 +1,18 @@
 var btnTRanslate=document.querySelector("#btn-translate");
 var textInput=document.querySelector("#input");
 var output=document.querySelector("#output");
-var number = textInput.value
-console.log(number);
 function clickHandler(){
-    var rem = textInput.value*2
-    output.innerText= rem
-    
+   for(var i=2;i<textInput.value;i++)
+   {
+       if(textInput.value%i==0){
+           output.innerHTML=("Your birthday is Not  a Prime number");
+           
+       }
+       else
+       {
+        output.innerHTML=("Your birtday is Prime Number")
+       }
+   }
+       
 }
 btnTRanslate.addEventListener("click",clickHandler)
